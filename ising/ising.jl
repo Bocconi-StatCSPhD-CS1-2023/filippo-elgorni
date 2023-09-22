@@ -1,8 +1,3 @@
-# I like to get famliar with new languages coding the most classic example from 
-# any computational physics course:
-# 2D Ising model Monte Carlo simulation using the Metropolis algorithm
-# ref: http://phd.fisica.unimi.it/assets/Comp_Phys-esercizio3-1.pdf
-
 using Random
 using Images, GLMakie
 
@@ -65,9 +60,6 @@ for step in 1:steps
     end   
     img[] = grid
 end
-
-
-
 
 
 
