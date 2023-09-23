@@ -2,7 +2,7 @@ HammingList = Union{AbstractArray, AbstractString}
 
 function hammingdist(l1:: T, l2::T) where T <: HammingList
     if typeof(l1) ≠ typeof(l2)
-        throw(error("Function arguments must be of same type")) # this should be accounted by the same T in generics types :/
+        throw(error("Function arguments must be of same type")) # this should be accounted by the same T in generics types
     end
     if length(l1) ≠ length(l2)
         error("Function arguments must be of same length")
@@ -44,4 +44,4 @@ hammingdist_reduce([1, 2, 3], [1, 4, 2, 3])
 hammingdist_reduce("castle", "battle")
 hammingdist_reduce([0, 3, 2, 1, 0], [0, 1, 2, 3, 1])
 hammingdist_reduce([], [])
-# Error handling is still a mistery to me
+# Error handling still to be delivered properly
